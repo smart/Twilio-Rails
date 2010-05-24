@@ -10,7 +10,7 @@ module Trails
         klass.send( :alias_method_chain, :protect_against_forgery?, :twilio )
         klass.send( :append_view_path, File.expand_path( File.join( File.dirname( __FILE__ ), 
                                                             '../../../assets' ) ) )
-        klass.send( :alias_method_chain, :default_layout, :twilio )
+        #klass.send( :alias_method_chain, :default_layout, :twilio )
       end
 
       protected
